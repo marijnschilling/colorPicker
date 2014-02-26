@@ -26,7 +26,7 @@
       <file leaf-file-name="MSCColorView.m" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ColorPicker/MSCColorView.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="0" selection-start="838" selection-end="912" vertical-scroll-proportion="0.16697247" vertical-offset="359" max-vertical-offset="1970">
+            <state line="2" column="26" selection-start="52" selection-end="52" vertical-scroll-proportion="0.055045873" vertical-offset="0" max-vertical-offset="1865">
               <folding />
             </state>
           </provider>
@@ -248,7 +248,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -345,7 +345,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ColorPicker/MSCColorView.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="0" selection-start="838" selection-end="912" vertical-scroll-proportion="0.16697247" vertical-offset="359" max-vertical-offset="1970">
+        <state line="2" column="26" selection-start="52" selection-end="52" vertical-scroll-proportion="0.055045873" vertical-offset="0" max-vertical-offset="1865">
           <folding />
         </state>
       </provider>
