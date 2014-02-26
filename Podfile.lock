@@ -1,0 +1,10 @@
+PODS:
+  - LEColorPicker (1.0.2)
+
+DEPENDENCIES:
+  - LEColorPicker (~> 1.0.2)
+
+SPEC CHECKSUMS:
+  LEColorPicker: 8d5e5b0ab6e8af8ff1c184ac9e24f4f707f7573c
+
+COCOAPODS: 0.29.0

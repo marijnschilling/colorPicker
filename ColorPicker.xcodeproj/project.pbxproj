@@ -1,0 +1,659 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		364791E1AFCC4884A700B4B3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A847FFD5A13940C6B820D6C3 /* libPods.a */; };
+		D197B01C06B6092D488A11A3 /* earth.png in Resources */ = {isa = PBXBuildFile; fileRef = D197B8B9E269788EEF8276EB /* earth.png */; };
+		D197B046B8293C4C73FF456C /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D197BA84163BCE8EED102AAA /* 2.jpg */; };
+		D197B074AA27735CF2ED2652 /* 12.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D197BF28EBE9AB149EDF578B /* 12.jpg */; };
+		D197B0F50ACF60323DC09CB7 /* Cat-Soap-Bubble.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D197B453257D21F97F119D9B /* Cat-Soap-Bubble.jpg */; };
+		D197B1047C8B6967AD46F91F /* 15.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D197B531480B231C052158BB /* 15.jpg */; };
+		D197B12566691B268608881F /* TheScream.png in Resources */ = {isa = PBXBuildFile; fileRef = D197B8D4E85F7DE5DAD96AEC /* TheScream.png */; };
+		D197B14AB47CAFD8CA7E835C /* 11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D197B056BCFD650CA61296C2 /* 11.jpg */; };
+		D197B20411273367D3775BA6 /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = D197BF9C35AAAE5DC5796CEB /* placeholder.png */; };
+		D197B2859A59A14461D6A687 /* 14.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D197B85CE8075450C370D808 /* 14.jpg */; };
+		D197B3D65CF920EA92E5E61E /* VitruvianMan.png in Resources */ = {isa = PBXBuildFile; fileRef = D197B51C0431C4592290727F /* VitruvianMan.png */; };
+		D197B45BF943E3F629CBAA23 /* 9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D197B73E6E49F1FB614021B1 /* 9.jpg */; };
+		D197B597CF1CA1BFAAECA0BC /* 7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D197B6B4E7D4A238FB757DB4 /* 7.jpg */; };
+		D197B69F2BC497980023B542 /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D197BE381D96717C36653E06 /* 5.jpg */; };
+		D197B7A6DEC611B9200A76CA /* Screenshot_Vortex.png in Resources */ = {isa = PBXBuildFile; fileRef = D197BE8BC0B9FA3B8DB4F255 /* Screenshot_Vortex.png */; };
+		D197B7B87009DCDEFC9CADC3 /* 6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D197BC72118DC9D72625BD7E /* 6.jpg */; };
+		D197B8920EBE4F2B4DBE48E7 /* 17.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D197B2B8D52066478D365265 /* 17.jpg */; };
+		D197B8C82E7B029343A85255 /* MonaLisa.png in Resources */ = {isa = PBXBuildFile; fileRef = D197BCCD05E7836E3621557E /* MonaLisa.png */; };
+		D197B8E944C66075C1EF1F06 /* 10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D197BE6B55419C81F7BB6406 /* 10.jpg */; };
+		D197B9E7633DACBA32F1CFAE /* 13.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D197B6EA0829083A362CEAF3 /* 13.jpg */; };
+		D197BA42E61DAFDD75AD93F4 /* 20.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D197B8B8330EDBB007AA49D4 /* 20.jpg */; };
+		D197BAAF5F8CE4324E0D0F70 /* AirplaneVortex.png in Resources */ = {isa = PBXBuildFile; fileRef = D197BB5C443263CEACA7FB1E /* AirplaneVortex.png */; };
+		D197BAB0D5450B01DA9FCFE6 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D197B7590476925BB6830AAD /* 1.jpg */; };
+		D197BB5D5E549B5640E718B8 /* Cat-Soap-Bubble.png in Resources */ = {isa = PBXBuildFile; fileRef = D197B948FDAEDF92EE5B352C /* Cat-Soap-Bubble.png */; };
+		D197BB6C54E024E1C3EE45FC /* Screenshot_Mona.png in Resources */ = {isa = PBXBuildFile; fileRef = D197BBA87A8C0D94C5547771 /* Screenshot_Mona.png */; };
+		D197BC2E9C6C27C530EA2B5C /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D197BA299A267684F925D000 /* 4.jpg */; };
+		D197BC57D5F624124A351F04 /* 16.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D197B145814B021E03623C8A /* 16.jpg */; };
+		D197BD442C7BD82B2F19935A /* 8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D197B8603FEB9C37526965CC /* 8.jpg */; };
+		D197BD67E208D53372C9CF4B /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D197B725719E09AEC28EA3FE /* 3.jpg */; };
+		D197BD694028B9CD7B57173F /* MSCColorView.m in Sources */ = {isa = PBXBuildFile; fileRef = D197BA3868C1B697B18615B2 /* MSCColorView.m */; };
+		D197BD8906029955F64E0FD4 /* 18.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D197B50CA80752F5C6F153A8 /* 18.jpg */; };
+		D197BE4C621837525021E5C6 /* 19.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D197B9FADC4119947B9C9354 /* 19.jpg */; };
+		D197BFC34677BFF34224F5EC /* voetbal.png in Resources */ = {isa = PBXBuildFile; fileRef = D197B9EA5EF34E1629A4F893 /* voetbal.png */; };
+		E63089E518BE05B70047E5C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E63089E418BE05B70047E5C1 /* Foundation.framework */; };
+		E63089E718BE05B70047E5C1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E63089E618BE05B70047E5C1 /* CoreGraphics.framework */; };
+		E63089E918BE05B70047E5C1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E63089E818BE05B70047E5C1 /* UIKit.framework */; };
+		E63089EF18BE05B70047E5C1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E63089ED18BE05B70047E5C1 /* InfoPlist.strings */; };
+		E63089F118BE05B70047E5C1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E63089F018BE05B70047E5C1 /* main.m */; };
+		E63089F518BE05B70047E5C1 /* MSCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E63089F418BE05B70047E5C1 /* MSCAppDelegate.m */; };
+		E63089F818BE05B70047E5C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E63089F618BE05B70047E5C1 /* Main.storyboard */; };
+		E63089FB18BE05B70047E5C1 /* MSCColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E63089FA18BE05B70047E5C1 /* MSCColorViewController.m */; };
+		E63089FD18BE05B70047E5C1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E63089FC18BE05B70047E5C1 /* Images.xcassets */; };
+		E6308A0418BE05B70047E5C1 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6308A0318BE05B70047E5C1 /* XCTest.framework */; };
+		E6308A0518BE05B70047E5C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E63089E418BE05B70047E5C1 /* Foundation.framework */; };
+		E6308A0618BE05B70047E5C1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E63089E818BE05B70047E5C1 /* UIKit.framework */; };
+		E6308A0E18BE05B70047E5C1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E6308A0C18BE05B70047E5C1 /* InfoPlist.strings */; };
+		E6308A1018BE05B70047E5C1 /* ColorPickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E6308A0F18BE05B70047E5C1 /* ColorPickerTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E6308A0718BE05B70047E5C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E63089D918BE05B70047E5C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E63089E018BE05B70047E5C1;
+			remoteInfo = ColorPicker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4E5EFA2BE4BC4649A6D44482 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		A847FFD5A13940C6B820D6C3 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D197B056BCFD650CA61296C2 /* 11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 11.jpg; sourceTree = "<group>"; };
+		D197B145814B021E03623C8A /* 16.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 16.jpg; sourceTree = "<group>"; };
+		D197B2B8D52066478D365265 /* 17.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 17.jpg; sourceTree = "<group>"; };
+		D197B453257D21F97F119D9B /* Cat-Soap-Bubble.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Cat-Soap-Bubble.jpg"; sourceTree = "<group>"; };
+		D197B50CA80752F5C6F153A8 /* 18.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 18.jpg; sourceTree = "<group>"; };
+		D197B51C0431C4592290727F /* VitruvianMan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = VitruvianMan.png; sourceTree = "<group>"; };
+		D197B531480B231C052158BB /* 15.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 15.jpg; sourceTree = "<group>"; };
+		D197B6B4E7D4A238FB757DB4 /* 7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 7.jpg; sourceTree = "<group>"; };
+		D197B6EA0829083A362CEAF3 /* 13.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 13.jpg; sourceTree = "<group>"; };
+		D197B725719E09AEC28EA3FE /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
+		D197B73E6E49F1FB614021B1 /* 9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 9.jpg; sourceTree = "<group>"; };
+		D197B7590476925BB6830AAD /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		D197B85CE8075450C370D808 /* 14.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 14.jpg; sourceTree = "<group>"; };
+		D197B8603FEB9C37526965CC /* 8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 8.jpg; sourceTree = "<group>"; };
+		D197B8B62F100EE3729BCE59 /* MSCColorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCColorView.h; sourceTree = "<group>"; };
+		D197B8B8330EDBB007AA49D4 /* 20.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 20.jpg; sourceTree = "<group>"; };
+		D197B8B9E269788EEF8276EB /* earth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = earth.png; sourceTree = "<group>"; };
+		D197B8D4E85F7DE5DAD96AEC /* TheScream.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TheScream.png; sourceTree = "<group>"; };
+		D197B948FDAEDF92EE5B352C /* Cat-Soap-Bubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cat-Soap-Bubble.png"; sourceTree = "<group>"; };
+		D197B9EA5EF34E1629A4F893 /* voetbal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = voetbal.png; sourceTree = "<group>"; };
+		D197B9FADC4119947B9C9354 /* 19.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 19.jpg; sourceTree = "<group>"; };
+		D197BA299A267684F925D000 /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
+		D197BA3868C1B697B18615B2 /* MSCColorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCColorView.m; sourceTree = "<group>"; };
+		D197BA84163BCE8EED102AAA /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		D197BB5C443263CEACA7FB1E /* AirplaneVortex.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AirplaneVortex.png; sourceTree = "<group>"; };
+		D197BBA87A8C0D94C5547771 /* Screenshot_Mona.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screenshot_Mona.png; sourceTree = "<group>"; };
+		D197BC72118DC9D72625BD7E /* 6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6.jpg; sourceTree = "<group>"; };
+		D197BCCD05E7836E3621557E /* MonaLisa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MonaLisa.png; sourceTree = "<group>"; };
+		D197BE381D96717C36653E06 /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpg; sourceTree = "<group>"; };
+		D197BE6B55419C81F7BB6406 /* 10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 10.jpg; sourceTree = "<group>"; };
+		D197BE8BC0B9FA3B8DB4F255 /* Screenshot_Vortex.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screenshot_Vortex.png; sourceTree = "<group>"; };
+		D197BF28EBE9AB149EDF578B /* 12.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 12.jpg; sourceTree = "<group>"; };
+		D197BF9C35AAAE5DC5796CEB /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
+		E63089E118BE05B70047E5C1 /* ColorPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E63089E418BE05B70047E5C1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E63089E618BE05B70047E5C1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E63089E818BE05B70047E5C1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E63089EC18BE05B70047E5C1 /* ColorPicker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ColorPicker-Info.plist"; sourceTree = "<group>"; };
+		E63089EE18BE05B70047E5C1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E63089F018BE05B70047E5C1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E63089F218BE05B70047E5C1 /* ColorPicker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ColorPicker-Prefix.pch"; sourceTree = "<group>"; };
+		E63089F318BE05B70047E5C1 /* MSCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSCAppDelegate.h; sourceTree = "<group>"; };
+		E63089F418BE05B70047E5C1 /* MSCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSCAppDelegate.m; sourceTree = "<group>"; };
+		E63089F718BE05B70047E5C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E63089F918BE05B70047E5C1 /* MSCColorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSCColorViewController.h; sourceTree = "<group>"; };
+		E63089FA18BE05B70047E5C1 /* MSCColorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSCColorViewController.m; sourceTree = "<group>"; };
+		E63089FC18BE05B70047E5C1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E6308A0218BE05B70047E5C1 /* ColorPickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColorPickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6308A0318BE05B70047E5C1 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		E6308A0B18BE05B70047E5C1 /* ColorPickerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ColorPickerTests-Info.plist"; sourceTree = "<group>"; };
+		E6308A0D18BE05B70047E5C1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E6308A0F18BE05B70047E5C1 /* ColorPickerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorPickerTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E63089DE18BE05B70047E5C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E63089E718BE05B70047E5C1 /* CoreGraphics.framework in Frameworks */,
+				E63089E918BE05B70047E5C1 /* UIKit.framework in Frameworks */,
+				E63089E518BE05B70047E5C1 /* Foundation.framework in Frameworks */,
+				364791E1AFCC4884A700B4B3 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E63089FF18BE05B70047E5C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6308A0418BE05B70047E5C1 /* XCTest.framework in Frameworks */,
+				E6308A0618BE05B70047E5C1 /* UIKit.framework in Frameworks */,
+				E6308A0518BE05B70047E5C1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D197B3878A3F3A25B1DAB6CB /* images */ = {
+			isa = PBXGroup;
+			children = (
+				D197B7590476925BB6830AAD /* 1.jpg */,
+				D197BB5C443263CEACA7FB1E /* AirplaneVortex.png */,
+				D197BCCD05E7836E3621557E /* MonaLisa.png */,
+				D197B453257D21F97F119D9B /* Cat-Soap-Bubble.jpg */,
+				D197B948FDAEDF92EE5B352C /* Cat-Soap-Bubble.png */,
+				D197BA299A267684F925D000 /* 4.jpg */,
+				D197BC72118DC9D72625BD7E /* 6.jpg */,
+				D197BA84163BCE8EED102AAA /* 2.jpg */,
+				D197BF9C35AAAE5DC5796CEB /* placeholder.png */,
+				D197B8B9E269788EEF8276EB /* earth.png */,
+				D197BE381D96717C36653E06 /* 5.jpg */,
+				D197BE8BC0B9FA3B8DB4F255 /* Screenshot_Vortex.png */,
+				D197B8D4E85F7DE5DAD96AEC /* TheScream.png */,
+				D197B9EA5EF34E1629A4F893 /* voetbal.png */,
+				D197BBA87A8C0D94C5547771 /* Screenshot_Mona.png */,
+				D197B51C0431C4592290727F /* VitruvianMan.png */,
+				D197B725719E09AEC28EA3FE /* 3.jpg */,
+				D197BE6B55419C81F7BB6406 /* 10.jpg */,
+				D197B73E6E49F1FB614021B1 /* 9.jpg */,
+				D197B8603FEB9C37526965CC /* 8.jpg */,
+				D197B6B4E7D4A238FB757DB4 /* 7.jpg */,
+				D197B6EA0829083A362CEAF3 /* 13.jpg */,
+				D197B9FADC4119947B9C9354 /* 19.jpg */,
+				D197B8B8330EDBB007AA49D4 /* 20.jpg */,
+				D197BF28EBE9AB149EDF578B /* 12.jpg */,
+				D197B2B8D52066478D365265 /* 17.jpg */,
+				D197B531480B231C052158BB /* 15.jpg */,
+				D197B056BCFD650CA61296C2 /* 11.jpg */,
+				D197B145814B021E03623C8A /* 16.jpg */,
+				D197B85CE8075450C370D808 /* 14.jpg */,
+				D197B50CA80752F5C6F153A8 /* 18.jpg */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		E63089D818BE05B70047E5C1 = {
+			isa = PBXGroup;
+			children = (
+				E63089EA18BE05B70047E5C1 /* ColorPicker */,
+				E6308A0918BE05B70047E5C1 /* ColorPickerTests */,
+				E63089E318BE05B70047E5C1 /* Frameworks */,
+				E63089E218BE05B70047E5C1 /* Products */,
+				4E5EFA2BE4BC4649A6D44482 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		E63089E218BE05B70047E5C1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E63089E118BE05B70047E5C1 /* ColorPicker.app */,
+				E6308A0218BE05B70047E5C1 /* ColorPickerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E63089E318BE05B70047E5C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E63089E418BE05B70047E5C1 /* Foundation.framework */,
+				E63089E618BE05B70047E5C1 /* CoreGraphics.framework */,
+				E63089E818BE05B70047E5C1 /* UIKit.framework */,
+				E6308A0318BE05B70047E5C1 /* XCTest.framework */,
+				A847FFD5A13940C6B820D6C3 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E63089EA18BE05B70047E5C1 /* ColorPicker */ = {
+			isa = PBXGroup;
+			children = (
+				E63089F318BE05B70047E5C1 /* MSCAppDelegate.h */,
+				E63089F418BE05B70047E5C1 /* MSCAppDelegate.m */,
+				E63089F618BE05B70047E5C1 /* Main.storyboard */,
+				E63089F918BE05B70047E5C1 /* MSCColorViewController.h */,
+				E63089FA18BE05B70047E5C1 /* MSCColorViewController.m */,
+				E63089FC18BE05B70047E5C1 /* Images.xcassets */,
+				E63089EB18BE05B70047E5C1 /* Supporting Files */,
+				D197B8B62F100EE3729BCE59 /* MSCColorView.h */,
+				D197BA3868C1B697B18615B2 /* MSCColorView.m */,
+				D197B3878A3F3A25B1DAB6CB /* images */,
+			);
+			path = ColorPicker;
+			sourceTree = "<group>";
+		};
+		E63089EB18BE05B70047E5C1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E63089EC18BE05B70047E5C1 /* ColorPicker-Info.plist */,
+				E63089ED18BE05B70047E5C1 /* InfoPlist.strings */,
+				E63089F018BE05B70047E5C1 /* main.m */,
+				E63089F218BE05B70047E5C1 /* ColorPicker-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E6308A0918BE05B70047E5C1 /* ColorPickerTests */ = {
+			isa = PBXGroup;
+			children = (
+				E6308A0F18BE05B70047E5C1 /* ColorPickerTests.m */,
+				E6308A0A18BE05B70047E5C1 /* Supporting Files */,
+			);
+			path = ColorPickerTests;
+			sourceTree = "<group>";
+		};
+		E6308A0A18BE05B70047E5C1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E6308A0B18BE05B70047E5C1 /* ColorPickerTests-Info.plist */,
+				E6308A0C18BE05B70047E5C1 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E63089E018BE05B70047E5C1 /* ColorPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6308A1318BE05B70047E5C1 /* Build configuration list for PBXNativeTarget "ColorPicker" */;
+			buildPhases = (
+				E91BB041A8354EE18DFA82D6 /* Check Pods Manifest.lock */,
+				E63089DD18BE05B70047E5C1 /* Sources */,
+				E63089DE18BE05B70047E5C1 /* Frameworks */,
+				E63089DF18BE05B70047E5C1 /* Resources */,
+				79EC470FFB8B408FA291E9B8 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ColorPicker;
+			productName = ColorPicker;
+			productReference = E63089E118BE05B70047E5C1 /* ColorPicker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E6308A0118BE05B70047E5C1 /* ColorPickerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6308A1618BE05B70047E5C1 /* Build configuration list for PBXNativeTarget "ColorPickerTests" */;
+			buildPhases = (
+				E63089FE18BE05B70047E5C1 /* Sources */,
+				E63089FF18BE05B70047E5C1 /* Frameworks */,
+				E6308A0018BE05B70047E5C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E6308A0818BE05B70047E5C1 /* PBXTargetDependency */,
+			);
+			name = ColorPickerTests;
+			productName = ColorPickerTests;
+			productReference = E6308A0218BE05B70047E5C1 /* ColorPickerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E63089D918BE05B70047E5C1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MSC;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Marijn Schilling";
+				TargetAttributes = {
+					E6308A0118BE05B70047E5C1 = {
+						TestTargetID = E63089E018BE05B70047E5C1;
+					};
+				};
+			};
+			buildConfigurationList = E63089DC18BE05B70047E5C1 /* Build configuration list for PBXProject "ColorPicker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E63089D818BE05B70047E5C1;
+			productRefGroup = E63089E218BE05B70047E5C1 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+			);
+			projectRoot = "";
+			targets = (
+				E63089E018BE05B70047E5C1 /* ColorPicker */,
+				E6308A0118BE05B70047E5C1 /* ColorPickerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E63089DF18BE05B70047E5C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E63089FD18BE05B70047E5C1 /* Images.xcassets in Resources */,
+				E63089EF18BE05B70047E5C1 /* InfoPlist.strings in Resources */,
+				E63089F818BE05B70047E5C1 /* Main.storyboard in Resources */,
+				D197BAB0D5450B01DA9FCFE6 /* 1.jpg in Resources */,
+				D197BAAF5F8CE4324E0D0F70 /* AirplaneVortex.png in Resources */,
+				D197B8C82E7B029343A85255 /* MonaLisa.png in Resources */,
+				D197B0F50ACF60323DC09CB7 /* Cat-Soap-Bubble.jpg in Resources */,
+				D197BB5D5E549B5640E718B8 /* Cat-Soap-Bubble.png in Resources */,
+				D197BC2E9C6C27C530EA2B5C /* 4.jpg in Resources */,
+				D197B7B87009DCDEFC9CADC3 /* 6.jpg in Resources */,
+				D197B046B8293C4C73FF456C /* 2.jpg in Resources */,
+				D197B20411273367D3775BA6 /* placeholder.png in Resources */,
+				D197B01C06B6092D488A11A3 /* earth.png in Resources */,
+				D197B69F2BC497980023B542 /* 5.jpg in Resources */,
+				D197B7A6DEC611B9200A76CA /* Screenshot_Vortex.png in Resources */,
+				D197B12566691B268608881F /* TheScream.png in Resources */,
+				D197BFC34677BFF34224F5EC /* voetbal.png in Resources */,
+				D197BB6C54E024E1C3EE45FC /* Screenshot_Mona.png in Resources */,
+				D197B3D65CF920EA92E5E61E /* VitruvianMan.png in Resources */,
+				D197BD67E208D53372C9CF4B /* 3.jpg in Resources */,
+				D197B8E944C66075C1EF1F06 /* 10.jpg in Resources */,
+				D197B45BF943E3F629CBAA23 /* 9.jpg in Resources */,
+				D197BD442C7BD82B2F19935A /* 8.jpg in Resources */,
+				D197B597CF1CA1BFAAECA0BC /* 7.jpg in Resources */,
+				D197B9E7633DACBA32F1CFAE /* 13.jpg in Resources */,
+				D197BE4C621837525021E5C6 /* 19.jpg in Resources */,
+				D197BA42E61DAFDD75AD93F4 /* 20.jpg in Resources */,
+				D197B074AA27735CF2ED2652 /* 12.jpg in Resources */,
+				D197B8920EBE4F2B4DBE48E7 /* 17.jpg in Resources */,
+				D197B1047C8B6967AD46F91F /* 15.jpg in Resources */,
+				D197B14AB47CAFD8CA7E835C /* 11.jpg in Resources */,
+				D197BC57D5F624124A351F04 /* 16.jpg in Resources */,
+				D197B2859A59A14461D6A687 /* 14.jpg in Resources */,
+				D197BD8906029955F64E0FD4 /* 18.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6308A0018BE05B70047E5C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6308A0E18BE05B70047E5C1 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		79EC470FFB8B408FA291E9B8 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E91BB041A8354EE18DFA82D6 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E63089DD18BE05B70047E5C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E63089FB18BE05B70047E5C1 /* MSCColorViewController.m in Sources */,
+				E63089F518BE05B70047E5C1 /* MSCAppDelegate.m in Sources */,
+				E63089F118BE05B70047E5C1 /* main.m in Sources */,
+				D197BD694028B9CD7B57173F /* MSCColorView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E63089FE18BE05B70047E5C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6308A1018BE05B70047E5C1 /* ColorPickerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E6308A0818BE05B70047E5C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E63089E018BE05B70047E5C1 /* ColorPicker */;
+			targetProxy = E6308A0718BE05B70047E5C1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E63089ED18BE05B70047E5C1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E63089EE18BE05B70047E5C1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E63089F618BE05B70047E5C1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E63089F718BE05B70047E5C1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E6308A0C18BE05B70047E5C1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E6308A0D18BE05B70047E5C1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E6308A1118BE05B70047E5C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E6308A1218BE05B70047E5C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E6308A1418BE05B70047E5C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E5EFA2BE4BC4649A6D44482 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ColorPicker/ColorPicker-Prefix.pch";
+				INFOPLIST_FILE = "ColorPicker/ColorPicker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E6308A1518BE05B70047E5C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E5EFA2BE4BC4649A6D44482 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ColorPicker/ColorPicker-Prefix.pch";
+				INFOPLIST_FILE = "ColorPicker/ColorPicker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E6308A1718BE05B70047E5C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ColorPicker.app/ColorPicker";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ColorPicker/ColorPicker-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ColorPickerTests/ColorPickerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		E6308A1818BE05B70047E5C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ColorPicker.app/ColorPicker";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ColorPicker/ColorPicker-Prefix.pch";
+				INFOPLIST_FILE = "ColorPickerTests/ColorPickerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E63089DC18BE05B70047E5C1 /* Build configuration list for PBXProject "ColorPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6308A1118BE05B70047E5C1 /* Debug */,
+				E6308A1218BE05B70047E5C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6308A1318BE05B70047E5C1 /* Build configuration list for PBXNativeTarget "ColorPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6308A1418BE05B70047E5C1 /* Debug */,
+				E6308A1518BE05B70047E5C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E6308A1618BE05B70047E5C1 /* Build configuration list for PBXNativeTarget "ColorPickerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6308A1718BE05B70047E5C1 /* Debug */,
+				E6308A1818BE05B70047E5C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E63089D918BE05B70047E5C1 /* Project object */;
+}
