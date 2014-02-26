@@ -39,12 +39,20 @@
     CGRect rect1 = CGRectMake(40, 0, 50, 50);
     CGRect rect2 = CGRectMake(100, 0, 50, 50);
     CGRect rect3 = CGRectMake(160, 0, 50, 50);
+    CGRect rect4 = CGRectMake(220, 0, 50, 50);
 
     [self drawRect:rect1 withColor:[self.colorArray objectAtIndex:0] context:context];
     [self drawRect:rect2 withColor:[self.colorArray objectAtIndex:1] context:context];
     [self drawRect:rect3 withColor:[self.colorArray objectAtIndex:2] context:context];
 
-    //UIColor *luminousColor =
+     UIColor *luminousColor = [self mostLuminousColor:self.colorArray];
+
+    [self drawRect:rect4 withColor:luminousColor context:context];
+}
+
+- (UIColor *)mostLuminousColor:(NSMutableArray *)array
+{
+    return nil;
 }
 
 - (void)drawRect:(CGRect)rect withColor:(UIColor *)color context:(CGContextRef)context
