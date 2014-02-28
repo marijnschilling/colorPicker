@@ -68,39 +68,94 @@
 
     if (difference1 > difference2)
     {
+        if (difference1 < 1)
+        {
+            color1 = [self maximizeColor:color1];
+        }
         return color1;
     }
     else
     {
+        if (difference1 < 1)
+        {
+            color2 = [self maximizeColor:color2];
+        }
         return color2;
     }
+}
+
+- (UIColor *)maximizeColor:(UIColor *)color
+{
+    NSMutableArray *rgbArray = [[NSMutableArray alloc] init];
+    rgbArray = [self getRGBValues:color];
+
+    NSInteger red = (NSInteger) [rgbArray objectAtIndex:0];
+    NSInteger green = (NSInteger) [rgbArray objectAtIndex:1];
+    NSInteger blue = (NSInteger) [rgbArray objectAtIndex:2];
+
+    if ((NSInteger) [rgbArray objectAtIndex:0] > (NSInteger) [rgbArray objectAtIndex:1] && (NSInteger) [rgbArray objectAtIndex:0] > (NSInteger) [rgbArray objectAtIndex:2])
+    {
+        red = (NSInteger) [rgbArray objectAtIndex:0] + 50;
+    }
+    else if ((NSInteger) [rgbArray objectAtIndex:1] > (NSInteger) [rgbArray objectAtIndex:0] && (NSInteger) [rgbArray objectAtIndex:1] > (NSInteger) [rgbArray objectAtIndex:2])
+    {
+        green = (NSInteger) [rgbArray objectAtIndex:1] + 50;
+    }
+    else
+    {
+        blue = (NSInteger) [rgbArray objectAtIndex:2] + 50;
+    }
+
+    UIColor *maximizedColor;
+    maximizedColor = [UIColor colorWithRed:(CGFloat) red / 255.0 green:(CGFloat) green / 255.0 blue:(CGFloat) blue / 255.0 alpha:1];
+
+    return maximizedColor;
 }
 
 - (NSInteger)getDIfferenceOfRGBValuesOfColor:(UIColor *)color
 {
     NSInteger difference = 0;
 
+    NSMutableArray *rgbArray = [[NSMutableArray alloc] init];
+    rgbArray = [self getRGBValues:color];
+
+    NSInteger red = [[rgbArray objectAtIndex:0] integerValue];
+    NSInteger green = [[rgbArray objectAtIndex:1] integerValue];
+    NSInteger blue = [[rgbArray objectAtIndex:2] integerValue];
+
+    NSInteger difRG = 0;
+    difRG = red - green;
+    NSInteger difGB = 0;
+    difGB = blue - green;
+    difference = ABS(difRG) + ABS(difGB);
+
+    return difference;
+}
+
+- (NSMutableArray *)getRGBValues:(UIColor *)color
+{
+    NSMutableArray *array = [[NSMutableArray alloc] init];
+
     CGFloat red = 0;
     CGFloat green = 0;
     CGFloat blue = 0;
     CGFloat alpha = 0;
 
-    NSUInteger r;
-    NSUInteger g;
-    NSUInteger b;
+    [color getRed:&red green:&green blue:&blue alpha:&alpha];
 
-    if ([color getRed:&red green:&green blue:&blue alpha:&alpha])
-    {
-        r = (NSUInteger) (red * 0xff);
-        g = (NSUInteger) (green * 0xff);
-        b = (NSUInteger) (blue * 0xff);
+    NSUInteger r = (NSUInteger) (red * 0xff);
+    NSUInteger g = (NSUInteger) (green * 0xff);
+    NSUInteger b = (NSUInteger) (blue * 0xff);
 
-        NSInteger difRG = r - g;
-        NSInteger difGB = b - g;
-        difference = ABS(difRG) + ABS(difGB);
-    }
+    NSNumber *rWrapped = [NSNumber numberWithInt:r];
+    NSNumber *gWrapped = [NSNumber numberWithInt:g];
+    NSNumber *bWrapped = [NSNumber numberWithInt:b];
 
-    return difference;
+    [array addObject:rWrapped];
+    [array addObject:gWrapped];
+    [array addObject:bWrapped];
+
+    return array;
 }
 
 - (void)drawRect:(CGRect)rect withColor:(UIColor *)color context:(CGContextRef)context
