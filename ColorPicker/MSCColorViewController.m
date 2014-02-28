@@ -31,7 +31,7 @@
     self.view = [[MSCColorView alloc] initWithFrame:[UIScreen mainScreen].bounds];
 
 
-    UIImage *catPhoto = [UIImage imageNamed:@"19.jpg"];
+    UIImage *catPhoto = [UIImage imageNamed:@"5.jpg"];
 
     NSParameterAssert(catPhoto);
 
@@ -47,29 +47,6 @@
     [self.colorView setColor1:color1 color2:color2 color3:color3];
     [self.colorView setImage:catPhoto];
 }
-
-//
-//- (UIColor *)isMoreLuminantThan:(UIColor *)otherColor
-//{
-//    CGColorRef colorRef = [otherColor CGColor];
-//
-//    int numComponents = CGColorGetNumberOfComponents(colorRef);
-//
-//    CGFloat red;
-//    CGFloat green;
-//    CGFloat blue;
-//    CGFloat alpha;
-//
-//    if (numComponents == 4)
-//    {
-//        const CGFloat *components = CGColorGetComponents(colorRef);
-//        red = components[0];
-//        green = components[1];
-//        blue = components[2];
-//        alpha = components[3];
-//    }
-//
-//}
 
 - (void)viewDidLoad
 {

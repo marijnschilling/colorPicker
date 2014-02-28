@@ -52,36 +52,33 @@
 
 - (UIColor *)mostLuminousColor:(NSMutableArray *)array
 {
-    UIColor *result;
-
-    UIColor *mostLuminous = [UIColor whiteColor];
-    for (int j = 0; j < array.count; j++)
+    UIColor *mostLuminous = [array objectAtIndex:0];
+    for (int j = 1; j < array.count; j++)
     {
         mostLuminous = [self compareColor:mostLuminous withOtherColor:[array objectAtIndex:j]];
     }
 
-    return result;
+    return mostLuminous;
 }
 
 - (UIColor *)compareColor:(UIColor *)color1 withOtherColor:(UIColor *)color2
 {
-    UIColor *luminous;
+    NSInteger difference1 = [self getDIfferenceOfRGBValuesOfColor:color1];
+    NSInteger difference2 = [self getDIfferenceOfRGBValuesOfColor:color2];
 
-    NSMutableArray *rgbColor1;
-    rgbColor1 = [[NSMutableArray alloc] init];
-    NSMutableArray *rgbColor2;
-    rgbColor2 = [[NSMutableArray alloc] init];
-
-    rgbColor1 = [self getRGBValuesOfColor:color1];
-    rgbColor2 = [self getRGBValuesOfColor:color2];
-
-    return luminous;
+    if (difference1 > difference2)
+    {
+        return color1;
+    }
+    else
+    {
+        return color2;
+    }
 }
 
-- (NSMutableArray *)getRGBValuesOfColor:(UIColor *)color
+- (NSInteger)getDIfferenceOfRGBValuesOfColor:(UIColor *)color
 {
-    NSMutableArray *rgbArray;
-    rgbArray = [[NSMutableArray alloc] init];
+    NSInteger difference = 0;
 
     CGFloat red = 0;
     CGFloat green = 0;
@@ -98,12 +95,12 @@
         g = (NSUInteger) (green * 0xff);
         b = (NSUInteger) (blue * 0xff);
 
-        [rgbArray addObject:[NSNumber numberWithUnsignedInteger:r]];
-        [rgbArray addObject:[NSNumber numberWithUnsignedInteger:g]];
-        [rgbArray addObject:[NSNumber numberWithUnsignedInteger:b]];
+        NSInteger difRG = r - g;
+        NSInteger difGB = b - g;
+        difference = ABS(difRG) + ABS(difGB);
     }
 
-    return rgbArray;
+    return difference;
 }
 
 - (void)drawRect:(CGRect)rect withColor:(UIColor *)color context:(CGContextRef)context
