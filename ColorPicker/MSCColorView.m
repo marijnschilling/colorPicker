@@ -1,11 +1,8 @@
 #import "MSCColorView.h"
 
 @interface MSCColorView ()
-@property(nonatomic, strong) UIColor *color3;
-@property(nonatomic, strong) UIColor *color2;
-@property(nonatomic, strong) UIColor *color1;
 @property(nonatomic, strong) UIImageView *imageView;
-@property(nonatomic, strong) NSMutableArray * colorArray;
+@property(nonatomic, strong) NSMutableArray *colorArray;
 @end
 
 @implementation MSCColorView
@@ -20,7 +17,7 @@
         self.imageView = [[UIImageView alloc] initWithFrame:imageFrame];
         self.imageView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
         [self addSubview:self.imageView];
-
+        self.colorArray = [[NSMutableArray alloc] init];
     }
 
     return self;
@@ -28,10 +25,6 @@
 
 - (void)setColor1:(UIColor *)color1 color2:(UIColor *)color2 color3:(UIColor *)color3
 {
-    self.color1 =color1;
-    self.color2 =color2;
-    self.color3 =color3;
-
     [self.colorArray addObject:color1];
     [self.colorArray addObject:color2];
     [self.colorArray addObject:color3];
@@ -46,12 +39,68 @@
     CGRect rect1 = CGRectMake(40, 0, 50, 50);
     CGRect rect2 = CGRectMake(100, 0, 50, 50);
     CGRect rect3 = CGRectMake(160, 0, 50, 50);
+    CGRect rect4 = CGRectMake(220, 0, 50, 50);
 
-    [self drawRect:rect1 withColor:self.color1 context:context];
-    [self drawRect:rect2 withColor:self.color2 context:context];
-    [self drawRect:rect3 withColor:self.color3 context:context];
+    [self drawRect:rect1 withColor:[self.colorArray objectAtIndex:0] context:context];
+    [self drawRect:rect2 withColor:[self.colorArray objectAtIndex:1] context:context];
+    [self drawRect:rect3 withColor:[self.colorArray objectAtIndex:2] context:context];
 
-    //UIColor *luminousColor =
+    UIColor *luminousColor = [self mostLuminousColor:self.colorArray];
+
+    [self drawRect:rect4 withColor:luminousColor context:context];
+}
+
+- (UIColor *)mostLuminousColor:(NSMutableArray *)array
+{
+    UIColor *mostLuminous = [array objectAtIndex:0];
+    for (int j = 1; j < array.count; j++)
+    {
+        mostLuminous = [self compareColor:mostLuminous withOtherColor:[array objectAtIndex:j]];
+    }
+
+    return mostLuminous;
+}
+
+- (UIColor *)compareColor:(UIColor *)color1 withOtherColor:(UIColor *)color2
+{
+    NSInteger difference1 = [self getDIfferenceOfRGBValuesOfColor:color1];
+    NSInteger difference2 = [self getDIfferenceOfRGBValuesOfColor:color2];
+
+    if (difference1 > difference2)
+    {
+        return color1;
+    }
+    else
+    {
+        return color2;
+    }
+}
+
+- (NSInteger)getDIfferenceOfRGBValuesOfColor:(UIColor *)color
+{
+    NSInteger difference = 0;
+
+    CGFloat red = 0;
+    CGFloat green = 0;
+    CGFloat blue = 0;
+    CGFloat alpha = 0;
+
+    NSUInteger r;
+    NSUInteger g;
+    NSUInteger b;
+
+    if ([color getRed:&red green:&green blue:&blue alpha:&alpha])
+    {
+        r = (NSUInteger) (red * 0xff);
+        g = (NSUInteger) (green * 0xff);
+        b = (NSUInteger) (blue * 0xff);
+
+        NSInteger difRG = r - g;
+        NSInteger difGB = b - g;
+        difference = ABS(difRG) + ABS(difGB);
+    }
+
+    return difference;
 }
 
 - (void)drawRect:(CGRect)rect withColor:(UIColor *)color context:(CGContextRef)context
@@ -61,7 +110,7 @@
 
     CGContextSetFillColorWithColor(context, color.CGColor);
     CGContextSetStrokeColorWithColor(context, [UIColor blackColor].CGColor);
-    CGContextAddArc(context, CGRectGetMidX(rect), CGRectGetMidY(rect), CGRectGetWidth(rect)/2, 0, 2*M_PI, YES);
+    CGContextAddArc(context, CGRectGetMidX(rect), CGRectGetMidY(rect), CGRectGetWidth(rect) / 2, 0, 2 * M_PI, YES);
 
     CGContextDrawPath(context, kCGPathFillStroke);
 }
@@ -70,28 +119,5 @@
 {
     [self.imageView setImage:image];
 }
-
-
-//- (UIColor *)isMoreLuminantThan:(UIColor *)otherColor
-//{
-//    CGColorRef colorRef = [otherColor CGColor];
-//
-//    int numComponents = CGColorGetNumberOfComponents(colorRef);
-//
-//    CGFloat red;
-//    CGFloat green;
-//    CGFloat blue;
-//    CGFloat alpha;
-//
-//    if (numComponents == 4)
-//    {
-//        const CGFloat *components = CGColorGetComponents(colorRef);
-//        red = components[0];
-//        green = components[1];
-//        blue = components[2];
-//        alpha = components[3];
-//    }
-//
-//}
 
 @end
