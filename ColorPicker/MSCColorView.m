@@ -68,42 +68,48 @@
 
     if (difference1 > difference2)
     {
-        if (difference1 < 1)
+        if (difference1 < 50)
         {
-            color1 = [self maximizeColor:color1];
+            color1 = [self maximizeColor:color1 withDifference:difference1];
         }
         return color1;
     }
     else
     {
-        if (difference1 < 1)
+        if (difference2 < 50)
         {
-            color2 = [self maximizeColor:color2];
+            color2 = [self maximizeColor:color2 withDifference:difference2];
         }
         return color2;
     }
 }
 
-- (UIColor *)maximizeColor:(UIColor *)color
+- (UIColor *)maximizeColor:(UIColor *)color withDifference:(NSInteger)difference
 {
-    NSMutableArray *rgbArray = [[NSMutableArray alloc] init];
-    rgbArray = [self getRGBValues:color];
+    NSMutableArray *rgbArray = [self getRGBValues:color];
 
-    NSInteger red = (NSInteger) [rgbArray objectAtIndex:0];
-    NSInteger green = (NSInteger) [rgbArray objectAtIndex:1];
-    NSInteger blue = (NSInteger) [rgbArray objectAtIndex:2];
+    NSInteger red = [[rgbArray objectAtIndex:0] integerValue];
+    NSInteger green = [[rgbArray objectAtIndex:1] integerValue];
+    NSInteger blue = [[rgbArray objectAtIndex:2] integerValue];
 
-    if ((NSInteger) [rgbArray objectAtIndex:0] > (NSInteger) [rgbArray objectAtIndex:1] && (NSInteger) [rgbArray objectAtIndex:0] > (NSInteger) [rgbArray objectAtIndex:2])
+    if (red < 100 && green < 100 && blue < 100)
     {
-        red = (NSInteger) [rgbArray objectAtIndex:0] + 50;
+        red += 50;
+        green += 50;
+        blue += 50;
     }
-    else if ((NSInteger) [rgbArray objectAtIndex:1] > (NSInteger) [rgbArray objectAtIndex:0] && (NSInteger) [rgbArray objectAtIndex:1] > (NSInteger) [rgbArray objectAtIndex:2])
+
+    if (red >= green && red >= blue)
     {
-        green = (NSInteger) [rgbArray objectAtIndex:1] + 50;
+        red += 10;
     }
-    else
+    else if (green >= red && green >=blue)
     {
-        blue = (NSInteger) [rgbArray objectAtIndex:2] + 50;
+        green += 10;
+    }
+    else if (blue >= red && blue >= green)
+    {
+        blue += 10;
     }
 
     UIColor *maximizedColor;

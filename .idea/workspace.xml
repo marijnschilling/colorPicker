@@ -23,37 +23,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MSCColorView.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ColorPicker/MSCColorView.h">
+      <file leaf-file-name="MSCColorViewController.h" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ColorPicker/MSCColorViewController.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="8" selection-start="76" selection-end="76" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="620">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MSCColorViewController.m" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ColorPicker/MSCColorViewController.m">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="48" selection-start="761" selection-end="761" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="1535">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MSCColorView.m" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ColorPicker/MSCColorView.m">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="70" column="27" selection-start="2177" selection-end="2177" vertical-scroll-proportion="0.41729322" vertical-offset="828" max-vertical-offset="3172">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MSCAppDelegate.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ColorPicker/MSCAppDelegate.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
+            <state line="10" column="52" selection-start="239" selection-end="239" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="225">
               <folding />
             </state>
           </provider>
@@ -68,10 +41,53 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MSCColorViewController.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ColorPicker/MSCColorViewController.h">
+      <file leaf-file-name="MSCAppDelegate.h" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ColorPicker/MSCAppDelegate.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="52" selection-start="239" selection-end="239" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="225">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MSCColorView.m" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ColorPicker/MSCColorView.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="78" column="27" selection-start="2348" selection-end="2348" vertical-scroll-proportion="0.0" vertical-offset="1170" max-vertical-offset="2775">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MSCColorViewController.m" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ColorPicker/MSCColorViewController.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="33" column="48" selection-start="761" selection-end="761" vertical-scroll-proportion="0.1706422" vertical-offset="402" max-vertical-offset="1535">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="15.jpg" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ColorPicker/images/15.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.m" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ColorPicker/main.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="0" selection-start="256" selection-end="256" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="300">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MSCColorView.h" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ColorPicker/MSCColorView.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="8" selection-start="76" selection-end="76" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="120">
               <folding />
             </state>
           </provider>
@@ -92,8 +108,8 @@
         <option value="$PROJECT_DIR$/ColorPicker/MSCViewController.h" />
         <option value="$PROJECT_DIR$/ColorPicker/MSCColorView.h" />
         <option value="$PROJECT_DIR$/ColorPicker/MSCColorViewController.h" />
-        <option value="$PROJECT_DIR$/ColorPicker/MSCColorViewController.m" />
         <option value="$PROJECT_DIR$/ColorPicker/MSCColorView.m" />
+        <option value="$PROJECT_DIR$/ColorPicker/MSCColorViewController.m" />
       </list>
     </option>
   </component>
@@ -144,7 +160,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Cidr.FilesView" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -215,15 +230,17 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Cidr.FilesView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="preferences.keymap" />
+    <property name="recentsLimit" value="5" />
+    <property name="FullScreen" value="false" />
     <property name="OBJC.PRESERVED_TARGET_SELECTION" value="ColorPicker" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RunManager" selected="Application.ColorPicker">
     <configuration default="true" type="AppleRunConfiguration" factoryName="Application" PROJECT_NAME="ColorPicker" TARGET_NAME="ColorPicker" CONFIG_NAME="Debug" PASS_PARENT_ENVS="FALSE" RUN_TARGET_PROJECT_NAME="ColorPicker" RUN_TARGET_NAME="ColorPicker" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
@@ -317,15 +334,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="27" />
+      <option name="time" value="36" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Pods/LEColorPicker/LEColorPicker/LEColorPicker.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="39" selection-start="504" selection-end="504" vertical-scroll-proportion="0.0" vertical-offset="146" max-vertical-offset="1821" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Pods/LEColorPicker/LEColorPicker/LEColorPicker.m">
       <provider selected="true" editor-type-id="text-editor">
         <state line="585" column="3" selection-start="19656" selection-end="19656" vertical-scroll-proportion="0.0" vertical-offset="8459" max-vertical-offset="13684" />
@@ -366,13 +378,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ColorPicker/main.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="256" selection-end="256" vertical-scroll-proportion="0.0" vertical-offset="44" max-vertical-offset="800">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ColorPicker/MSCAppDelegate.h">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1167">
@@ -387,20 +392,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ColorPicker/MSCColorViewController.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="52" selection-start="239" selection-end="239" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1084">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ColorPicker/MSCColorViewController.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="48" selection-start="761" selection-end="761" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="1535">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ColorPicker/MSCColorView.h">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="8" selection-start="76" selection-end="76" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="949">
@@ -408,9 +399,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ColorPicker/main.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="0" selection-start="256" selection-end="256" vertical-scroll-proportion="0.0" vertical-offset="44" max-vertical-offset="800">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ColorPicker/MSCColorViewController.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="52" selection-start="239" selection-end="239" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1084">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ColorPicker/images/15.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ColorPicker/MSCColorView.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="27" selection-start="2177" selection-end="2177" vertical-scroll-proportion="0.41729322" vertical-offset="828" max-vertical-offset="3172">
+        <state line="78" column="27" selection-start="2348" selection-end="2348" vertical-scroll-proportion="0.0" vertical-offset="764" max-vertical-offset="3275">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ColorPicker/MSCColorViewController.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="48" selection-start="761" selection-end="761" vertical-scroll-proportion="0.1706422" vertical-offset="402" max-vertical-offset="1535">
           <folding />
         </state>
       </provider>

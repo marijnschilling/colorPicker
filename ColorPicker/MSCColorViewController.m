@@ -31,7 +31,7 @@
     self.view = [[MSCColorView alloc] initWithFrame:[UIScreen mainScreen].bounds];
 
 
-    UIImage *catPhoto = [UIImage imageNamed:@"11.jpg"];
+    UIImage *catPhoto = [UIImage imageNamed:@"20.jpg"];
 
     NSParameterAssert(catPhoto);
 
