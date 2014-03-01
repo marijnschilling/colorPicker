@@ -20,6 +20,7 @@
 		D197B3D65CF920EA92E5E61E /* VitruvianMan.png in Resources */ = {isa = PBXBuildFile; fileRef = D197B51C0431C4592290727F /* VitruvianMan.png */; };
 		D197B45BF943E3F629CBAA23 /* 9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D197B73E6E49F1FB614021B1 /* 9.jpg */; };
 		D197B597CF1CA1BFAAECA0BC /* 7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D197B6B4E7D4A238FB757DB4 /* 7.jpg */; };
+		D197B5BC14E9A46803170041 /* UIColor+MSCMaximizeColor.m in Sources */ = {isa = PBXBuildFile; fileRef = D197BFE3606CDF83116F44C0 /* UIColor+MSCMaximizeColor.m */; };
 		D197B69F2BC497980023B542 /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D197BE381D96717C36653E06 /* 5.jpg */; };
 		D197B7A6DEC611B9200A76CA /* Screenshot_Vortex.png in Resources */ = {isa = PBXBuildFile; fileRef = D197BE8BC0B9FA3B8DB4F255 /* Screenshot_Vortex.png */; };
 		D197B7B87009DCDEFC9CADC3 /* 6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D197BC72118DC9D72625BD7E /* 6.jpg */; };
@@ -100,8 +101,10 @@
 		D197BE381D96717C36653E06 /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpg; sourceTree = "<group>"; };
 		D197BE6B55419C81F7BB6406 /* 10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 10.jpg; sourceTree = "<group>"; };
 		D197BE8BC0B9FA3B8DB4F255 /* Screenshot_Vortex.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screenshot_Vortex.png; sourceTree = "<group>"; };
+		D197BEBB659F310367FC6C51 /* UIColor+MSCMaximizeColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+MSCMaximizeColor.h"; sourceTree = "<group>"; };
 		D197BF28EBE9AB149EDF578B /* 12.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 12.jpg; sourceTree = "<group>"; };
 		D197BF9C35AAAE5DC5796CEB /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
+		D197BFE3606CDF83116F44C0 /* UIColor+MSCMaximizeColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+MSCMaximizeColor.m"; sourceTree = "<group>"; };
 		E63089E118BE05B70047E5C1 /* ColorPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E63089E418BE05B70047E5C1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E63089E618BE05B70047E5C1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -231,6 +234,8 @@
 				D197B8B62F100EE3729BCE59 /* MSCColorView.h */,
 				D197BA3868C1B697B18615B2 /* MSCColorView.m */,
 				D197B3878A3F3A25B1DAB6CB /* images */,
+				D197BEBB659F310367FC6C51 /* UIColor+MSCMaximizeColor.h */,
+				D197BFE3606CDF83116F44C0 /* UIColor+MSCMaximizeColor.m */,
 			);
 			path = ColorPicker;
 			sourceTree = "<group>";
@@ -434,6 +439,7 @@
 				E63089F518BE05B70047E5C1 /* MSCAppDelegate.m in Sources */,
 				E63089F118BE05B70047E5C1 /* main.m in Sources */,
 				D197BD694028B9CD7B57173F /* MSCColorView.m in Sources */,
+				D197B5BC14E9A46803170041 /* UIColor+MSCMaximizeColor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

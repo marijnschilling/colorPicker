@@ -1,4 +1,5 @@
 #import "MSCColorView.h"
+#import "UIColor+MSCMaximizeColor.h"
 
 @interface MSCColorView ()
 @property(nonatomic, strong) UIImageView *imageView;
@@ -55,113 +56,10 @@
     UIColor *mostLuminous = [array objectAtIndex:0];
     for (int j = 1; j < array.count; j++)
     {
-        mostLuminous = [self compareColor:mostLuminous withOtherColor:[array objectAtIndex:j]];
+        mostLuminous = [mostLuminous compareColorWith:[array objectAtIndex:j]];
     }
 
     return mostLuminous;
-}
-
-- (UIColor *)compareColor:(UIColor *)color1 withOtherColor:(UIColor *)color2
-{
-    NSInteger difference1 = [self getDIfferenceOfRGBValuesOfColor:color1];
-    NSInteger difference2 = [self getDIfferenceOfRGBValuesOfColor:color2];
-
-    if (difference1 > difference2)
-    {
-        if (difference1 < 50)
-        {
-            color1 = [self maximizeColor:color1 withDifference:difference1];
-        }
-        return color1;
-    }
-    else
-    {
-        if (difference2 < 50)
-        {
-            color2 = [self maximizeColor:color2 withDifference:difference2];
-        }
-        return color2;
-    }
-}
-
-- (UIColor *)maximizeColor:(UIColor *)color withDifference:(NSInteger)difference
-{
-    NSMutableArray *rgbArray = [self getRGBValues:color];
-
-    NSInteger red = [[rgbArray objectAtIndex:0] integerValue];
-    NSInteger green = [[rgbArray objectAtIndex:1] integerValue];
-    NSInteger blue = [[rgbArray objectAtIndex:2] integerValue];
-
-    if (red < 100 && green < 100 && blue < 100)
-    {
-        red += 50;
-        green += 50;
-        blue += 50;
-    }
-
-    if (red >= green && red >= blue)
-    {
-        red += 10;
-    }
-    else if (green >= red && green >=blue)
-    {
-        green += 10;
-    }
-    else if (blue >= red && blue >= green)
-    {
-        blue += 10;
-    }
-
-    UIColor *maximizedColor;
-    maximizedColor = [UIColor colorWithRed:(CGFloat) red / 255.0 green:(CGFloat) green / 255.0 blue:(CGFloat) blue / 255.0 alpha:1];
-
-    return maximizedColor;
-}
-
-- (NSInteger)getDIfferenceOfRGBValuesOfColor:(UIColor *)color
-{
-    NSInteger difference = 0;
-
-    NSMutableArray *rgbArray = [[NSMutableArray alloc] init];
-    rgbArray = [self getRGBValues:color];
-
-    NSInteger red = [[rgbArray objectAtIndex:0] integerValue];
-    NSInteger green = [[rgbArray objectAtIndex:1] integerValue];
-    NSInteger blue = [[rgbArray objectAtIndex:2] integerValue];
-
-    NSInteger difRG = 0;
-    difRG = red - green;
-    NSInteger difGB = 0;
-    difGB = blue - green;
-    difference = ABS(difRG) + ABS(difGB);
-
-    return difference;
-}
-
-- (NSMutableArray *)getRGBValues:(UIColor *)color
-{
-    NSMutableArray *array = [[NSMutableArray alloc] init];
-
-    CGFloat red = 0;
-    CGFloat green = 0;
-    CGFloat blue = 0;
-    CGFloat alpha = 0;
-
-    [color getRed:&red green:&green blue:&blue alpha:&alpha];
-
-    NSUInteger r = (NSUInteger) (red * 0xff);
-    NSUInteger g = (NSUInteger) (green * 0xff);
-    NSUInteger b = (NSUInteger) (blue * 0xff);
-
-    NSNumber *rWrapped = [NSNumber numberWithInt:r];
-    NSNumber *gWrapped = [NSNumber numberWithInt:g];
-    NSNumber *bWrapped = [NSNumber numberWithInt:b];
-
-    [array addObject:rWrapped];
-    [array addObject:gWrapped];
-    [array addObject:bWrapped];
-
-    return array;
 }
 
 - (void)drawRect:(CGRect)rect withColor:(UIColor *)color context:(CGContextRef)context
