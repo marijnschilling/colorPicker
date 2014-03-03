@@ -2,34 +2,32 @@
 
 @implementation UIColor (MSCMaximizeColor)
 
-- (UIColor *)compareColorWith:(UIColor *)color
+- (UIColor *)msc_compareColorWith:(UIColor *)color
 {
-    NSInteger difference1 = [self getDIfferenceOfRGBValuesOfColor];
-    NSInteger difference2 = [color getDIfferenceOfRGBValuesOfColor];
-
-    UIColor * color2;
+    NSInteger difference1 = [self msc_differenceOfRGBValues];
+    NSInteger difference2 = [color msc_differenceOfRGBValues];
 
     if (difference1 > difference2)
     {
-        if (difference1 < 50)
+        if (difference1 < 0)
         {
-            color2 = [self maximizeColor];
+            [self msc_maximizeColor];
         }
-        return color2;
+        return self;
     }
     else
     {
-        if (difference2 < 50)
+        if (difference2 < 0)
         {
-            color = [color maximizeColor];
+            color = [color msc_maximizeColor];
         }
         return color;
     }
 }
 
-- (UIColor *)maximizeColor
+- (UIColor *)msc_maximizeColor
 {
-    NSMutableArray *rgbArray = [self getRGBValues];
+    NSMutableArray *rgbArray = [self msc_arrayOfRGBValues];
 
     NSInteger red = [[rgbArray objectAtIndex:0] integerValue];
     NSInteger green = [[rgbArray objectAtIndex:1] integerValue];
@@ -61,12 +59,12 @@
     return maximizedColor;
 }
 
-- (NSInteger)getDIfferenceOfRGBValuesOfColor
+- (NSInteger)msc_differenceOfRGBValues
 {
     NSInteger difference = 0;
 
     NSMutableArray *rgbArray = [[NSMutableArray alloc] init];
-    rgbArray = [self getRGBValues];
+    rgbArray = [self msc_arrayOfRGBValues];
 
     NSInteger red = [[rgbArray objectAtIndex:0] integerValue];
     NSInteger green = [[rgbArray objectAtIndex:1] integerValue];
@@ -75,13 +73,15 @@
     NSInteger difRG = 0;
     difRG = red - green;
     NSInteger difGB = 0;
-    difGB = blue - green;
-    difference = ABS(difRG) + ABS(difGB);
+    difGB = green - blue;
+    NSInteger difBR = 0;
+    difBR = blue - red;
+    difference = ABS(difRG) + ABS(difGB) + ABS(difBR);
 
     return difference;
 }
 
-- (NSMutableArray *)getRGBValues
+- (NSArray *)msc_arrayOfRGBValues
 {
     NSMutableArray *array = [[NSMutableArray alloc] init];
 
@@ -92,13 +92,9 @@
 
     [self getRed:&red green:&green blue:&blue alpha:&alpha];
 
-    NSUInteger r = (NSUInteger) (red * 0xff);
-    NSUInteger g = (NSUInteger) (green * 0xff);
-    NSUInteger b = (NSUInteger) (blue * 0xff);
-
-    NSNumber *rWrapped = [NSNumber numberWithInt:r];
-    NSNumber *gWrapped = [NSNumber numberWithInt:g];
-    NSNumber *bWrapped = [NSNumber numberWithInt:b];
+    NSNumber *rWrapped = @(red * 0xff);
+    NSNumber *gWrapped = @(green * 0xff);
+    NSNumber *bWrapped = @(blue * 0xff);
 
     [array addObject:rWrapped];
     [array addObject:gWrapped];

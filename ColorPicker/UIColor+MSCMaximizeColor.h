@@ -2,6 +2,6 @@
 
 @interface UIColor (MSCMaximizeColor)
 
-- (UIColor *)compareColorWith:(UIColor *)color;
+- (UIColor *)msc_compareColorWith:(UIColor *)color;
 
 @end

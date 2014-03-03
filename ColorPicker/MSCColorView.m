@@ -56,7 +56,7 @@
     UIColor *mostLuminous = [array objectAtIndex:0];
     for (int j = 1; j < array.count; j++)
     {
-        mostLuminous = [mostLuminous compareColorWith:[array objectAtIndex:j]];
+        mostLuminous = [mostLuminous msc_compareColorWith:[array objectAtIndex:j]];
     }
 
     return mostLuminous;
